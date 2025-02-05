@@ -7,7 +7,8 @@ pipeline {
       }
       steps {
         sh 'mvn --version'
-        echo "The message is: ${params.hello}"
+        echo Test1
+        echo params.hello
       }
     }
     stage('Front-end') {
